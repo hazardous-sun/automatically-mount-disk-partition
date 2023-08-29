@@ -4,6 +4,14 @@ This tool was developed mainly as a study of GNU Bash, since the OS already has 
 
 ## Configuration
 
+## Automated configuration
+
+In order to install the script, you just need to run the [installer.sh](installer.sh) file as superuser:
+
+```sudo ./installer.sh```
+
+## Manual configuration
+
 1. Create a ".service" file inside `/etc/systemd/system/`
    * `sudo touch /etc/systemd/system/automatically_mount_partition.service`
 2. Add the service description to the file
