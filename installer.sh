@@ -21,7 +21,7 @@ fi
 sudo truncate -s 0 "$SERVICE_FILE_PATH"
 
 # Adds the data to the ".service" file
-sudo printf "[Unit]\nDescription=Automatically mounting HD partition from boot\n\n[Service]\nExecStart=$SCRIPT_PATH\nRestart=always\nUser=root\n\n[Install]\nWantedBy=default.target" >> "$SERVICE_FILE_PATH"
+sudo printf "[Unit]\nDescription=Automatically mount HDD partition from boot\n\n[Service]\nExecStart=$SCRIPT_PATH\nRestart=always\nUser=root\n\n[Install]\nWantedBy=default.target" >> "$SERVICE_FILE_PATH"
 
 # Enables the ".service" file
 sudo systemctl enable automatically_mount_partition.service
